@@ -1,0 +1,23 @@
+<nav role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo"><%= image_tag("rotary_wheel_transparent.gif", :alt => "Rotary Wheel Logo", :class => "small-photo") %></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Navbar Link</a></li>
+      <li><a href="#">Navbar Link</a></li>
+      <li><a href="#">Navbar Link</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Navbar Link</a></li>
+      <li><a href="#">Navbar Link</a></li>
+      <li><a href="#">Navbar Link</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script>
+ $(".button-collapse").sideNav();
+</script>

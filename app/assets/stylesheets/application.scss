@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ @import "materialize/components/color";
+ $primary-color: color("blue", "lighten-2") !default;
+ $secondary-color: color("yellow", "accent-2") !default;
+ @import 'materialize';
+
+ .small-photo {
+   height: 50px;
+ }
