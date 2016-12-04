@@ -1,7 +1,10 @@
-<h1>Upcoming Events</h1>
+<div class="container">
+  <h1>Upcoming Club Meetings</h1>
 
-<ul>
-  <% @events.each do |event| %>
-  <li><%= event.name %></li>
-  <% end %>
-</ul>
+    <% @events.each do |event| %>
+      <ul>
+        <li>  Speaker name: <%= event.speaker_name %></li>
+      </ul>
+    <% end %>
+
+</div>
