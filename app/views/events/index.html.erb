@@ -4,10 +4,10 @@
     <% @events.each do |event| %>
       <ul>
         <li>Speaker name: <%= event.speaker_name %></li>
-        <li>Speaker bio: </li>
-        <li>Speech topic:</li>
-        <li>Date and time: </li>
-        <li>Location: </li>
+        <li>Speaker bio: <%= event.speaker_bio %></li>
+        <li>Speech topic: <%= event.speech_topic %></li>
+        <li>Date and time: <%= event.date_time %></li>
+        <li>Location: <%= event.location %></li>
       </ul>
     <% end %>
 

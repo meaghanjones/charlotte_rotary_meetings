@@ -1,0 +1,10 @@
+<div class="container">
+<ul>
+  <li>Speaker name: <%= @event.speaker_name %></li>
+  <li>Speaker bio: <%= @event.speaker_bio %></li>
+  <li>Speech topic: <%= @event.speech_topic %></li>
+  <li>Date and time: <%= @event.date_time.strftime('%B %d, %Y %I:%M %p') %></li>
+  <li>Location: <%= @event.location %></li>
+</ul>
+  <p><%= link_to "Return to List of Events", events_path %></p>
+<div class="container">

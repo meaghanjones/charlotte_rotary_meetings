@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   end
 
   def show
-    @course = Event.find(params[:id])
+    @event = Event.find(params[:id])
   end
 
   def new
@@ -27,7 +27,7 @@ class EventsController < ApplicationController
 
   def update
     @event = Event.find(params[:id])
-    if @event.update(course_params)
+    if @event.update(event_params)
       redirect_to events_path
     else
       render :edit
